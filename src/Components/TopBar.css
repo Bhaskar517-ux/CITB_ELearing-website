@@ -1,0 +1,108 @@
+/* TopBar Styles */
+.top-bar {
+  position: relative;
+  height: 90px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.top-bar .logo-container {
+  position: absolute; /* Position logo absolutely */
+  left: 20px; /* Align logo to the top-left corner */
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-logo {
+  height: 60px; /* Adjust logo size */
+  width: auto;
+}
+
+.top-bar .logo {
+  text-align: center;
+}
+
+.top-bar .logo h1 {
+  margin: 0;
+  color: #270307;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/* Auth Links Section */
+.auth-container {
+  position: absolute; /* Position auth links absolutely */
+  right: 20px; /* Align links to the top-right corner */
+  display: flex;
+  align-items: center;
+}
+
+.auth-link {
+  margin-left: 15px; /* Space between links */
+  font-size: 16px;
+  color: #ffffff; /* Text color */
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 20px; /* Add padding to make it look like a button */
+  background-color: #007bff; /* Background color for the button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+.auth-link:hover {
+  background-color: #c40f0f; /* Background color on hover */
+  color: #ffffff; /* Ensure the text color stays white on hover */
+}
+
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column; /* Stack logo and title vertically */
+    height: auto; /* Adjust height dynamically */
+    padding: 15px;
+  }
+
+  .top-bar .logo-container {
+    position: static; /* Reset position */
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .top-bar-logo {
+    height: 50px; /* Adjust logo size for smaller screens */
+  }
+
+  .top-bar .logo h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .auth-container {
+    position: absolute; /* Position auth links absolutely */
+    right: 20px; /* Align links to the top-right corner */
+    display: flex;
+    align-items: center;
+  }
+  
+  .auth-link {
+    margin-left: 15px; /* Space between links */
+    font-size: 16px;
+    color: #ffffff; /* Text color */
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    background-color: #007bff; /* Background color for the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .auth-link:hover {
+    background-color: #c40f0f; /* Background color on hover */
+    color: #ffffff; /* Ensure the text color stays white on hover */
+  }
+  
+}

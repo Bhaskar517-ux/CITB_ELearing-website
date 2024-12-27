@@ -1,0 +1,13 @@
+/* CSS for the provided HTML structure */
+
+.hero_banner {
+  box-shadow: inset 0px 0px 0px 0px #cecece;
+  margin-top: 0;
+}
+
+.col-md-8,
+.col-sm-8,
+.col-xs-12,
+.col-lg-9 {
+  box-shadow: inset 0px 0px 0px 0px #cecece;
+}

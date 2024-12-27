@@ -1,0 +1,338 @@
+/* 
+
+/* Default Navbar Styles 
+.navbar {
+  background-color: #7d3cff; /* New background color 
+  padding: 1rem;
+}
+
+.navbar .container-fluid {
+  padding: 0;
+}
+
+.navbar-logo {
+  color: #e903d9;
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  font-size: 1rem;
+}
+
+.navbar-link {
+  color:#ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #db9b1c;
+}
+/* Navbar container 
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Navbar menu styling 
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Centered and responsive search bar 
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 300px;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-button {
+  height: 40px;
+  font-size: 16px;
+  padding: 0 15px;
+  border-radius: 4px;
+}
+
+/* Mobile View Styles 
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #16213e; /* Mobile-specific background color 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .navbar-item {
+    text-align: left;
+    width: 100%;
+  }
+
+  .navbar-link {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    color: rgb(219, 47, 47);
+  }
+
+  .navbar-link:hover {
+    background-color: #444;
+    color: #fdbe33;
+  }
+
+  
+}
+ */
+
+ /* Default Navbar Styles */
+/* Navbar Styles */
+.navbar {
+  background-color: #007bff; /* Navbar background */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* Space between menu and search */
+  align-items: center;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  color: #e903d9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Ensures space between items */
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 1rem; /* Add spacing between menu items */
+}
+
+.navbar-item {
+  margin: 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #db9b1c; /* Hover color */
+}
+
+/* Align the search container to the right */
+.search-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns the search bar to the right */
+  align-items: center;
+}
+
+/* Search form and inputs */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 250px; /* Adjusted width */
+  height: 35px; /* Adjusted height for consistency */
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-button {
+  height: 35px; /* Match height with input */
+  font-size: 14px;
+  padding: 0 15px;
+  border-radius: 4px;
+  background-color: #ffffff; /* Button background */
+  color: #fdbe33; /* Button text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #db9b1c; /* Hover background */
+  color: #ffffff; /* Hover text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .search-container {
+    width: 100%; /* Full width for smaller screens */
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    width: 100%; /* Full width search bar */
+  }
+}
+
+/* Styling for the nested dropdown */
+.dropdown-two {
+  display: none; /* Hide the nested dropdown by default */
+  position: absolute;
+  left: 100%; /* Position the nested menu to the right */
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 200px; /* You can adjust the width to fit your needs */
+}
+
+/* Show the dropdown menu when hovering over the parent */
+.dropdown-one:hover .dropdown-two {
+  display: block;
+}
+
+/* Styling for the dropdown items to stack vertically */
+.dropdown-two .dItem {
+  display: block;
+  width: 100%; /* Ensure they take the full width */
+  padding: 10px; /* Add padding to the items */
+  cursor: pointer;
+}
+
+.dropdown-two .dItem:hover {
+  background-color: #f8f9fa;
+}
+
+/* Mobile View Styles */
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #16213e; /* Mobile-specific background color */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .navbar-logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    background-color: #ff004f; /* Mobile menu background */
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  .navbar-menu.active {
+    right: 0; /* Slide the menu in */
+  }
+
+  .navbar-item {
+    text-align: left;
+    width: 100%;
+  }
+
+  .navbar-link {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    color: rgb(219, 47, 47);
+  }
+
+  .navbar-link:hover {
+    background-color: #444;
+    color: #fdbe33;
+  }
+
+ 
+  .search-container {
+    display: none; /* Hides search bar in mobile view */
+  }
+}
+
